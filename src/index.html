@@ -6,6 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <my-button text="Botón ESPE"></my-button>
+    <wc-router>
+        <h1>Welcome to My Page</h1>
+        <wc-navbar></wc-navbar>
+        <wc-viewport>
+            <wc-route path="/default">
+                <wc-home></wc-home>
+            </wc-route>
+            <wc-route path="/page2">
+                <h2>Hola desde la page 2</h2>
+                <wc-page2></wc-page2>
+            </wc-route>
+            <wc-route path="/page3">
+                <wc-page3></wc-page3>
+            </wc-route>
+        </wc-viewport>
+    </wc-router>
 </body>
 </html>
